@@ -1,0 +1,72 @@
+
+
+/*@font-face{
+font-family: "AlexBrush";
+src: url('AlexBrush-Regular.ttf);
+}*/
+@font-face{ 
+font-family: plexifont;
+src:  url('plexifont-webfont.woff') format('woff');
+}
+
+div#main {
+font-family: plexifont;
+font-size: 34px;
+font-weight: 900;
+color:red;
+margin-top: -270px;
+margin-left: -40px;
+}
+
+h1 {
+color:red;
+}
+
+.recherche {
+float:left;
+margin-left:350px;
+width:500px;
+height:600px;
+background-color:white;
+border-width: 1px 2px 3px 2px;
+border-style: solid dotted;
+border-color: black;
+padding:0 10px;
+margin-top: -600px;
+}
+
+.nouveau {
+float:right;
+margin-left:1000px;
+margin-top: -616px;
+width:300px;
+height:200px;
+background-color:white;
+border-width: 1px 2px 3px 2px;
+border-style: solid dotted;
+border-color: black;
+padding:0 10px;
+}
+
+.right {
+margin-top: 20px;
+margin-left: 0px;
+}
+
+.left {
+margin-top: 220px;
+margin-left: 0px;
+}
+
+img {
+vertical-align: bottom;
+}
+
+body {
+background-color: #F4661B;
+}
+
+div#argentine {
+position: relative;
+height: 10px;
+}

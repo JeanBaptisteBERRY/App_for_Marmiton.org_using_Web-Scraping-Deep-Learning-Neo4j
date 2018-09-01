@@ -1,0 +1,19 @@
+ 
+<!doctype html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" charset="utf-8">
+<body>
+<p>
+Dans votre frigo, vous avez les ingrédients suivants : {{result}}.<br/><br/> <br/> 
+Les plats que nous vous proposons sont :<ul style="list-style-type:square"> <li>Tomates Farcies a la Dinde</li><li>Oeuf au plat papa</li><li>L'oeuf chat (pour les enfants)</li><li>Steak tartare arrangé</li><li>Haché de steack</li><li>Veau façon makis</li><li>Pain de viande rapide</li><li>Hamburgers à  la plancha</li><li>Omelette façon papa au salami</li> </ul>.<br/><br/> <br/>
+<p>Veuillez choisir une recette parmi les résultats :  
+<form method="POST" action="http://localhost:5000/index">
+<select name="nom" size="1">
+<option>Tomates Farcies a la Dinde</option><option>Oeuf au plat papa</option><option>L'oeuf chat (pour les enfants)</option><option>Steak tartare arrangé</option><option>Haché de steack</option><option>Veau façon makis</option><option>Pain de viande rapide</option><option>Hamburgers à  la plancha</option><option>Omelette façon papa au salami</option>
+</select>
+<input type = "submit" value = "submit" />
+</form>
+</p>
+</body>
+</html>

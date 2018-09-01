@@ -1,0 +1,36 @@
+<html>
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" charset="utf-8">
+<img class="right" src="/static/neoCook.png" border="0" height="252px" width="256,5px"/>
+<div id="main">
+<h1 align="center">MARMIBON APP</h1> 
+</div>
+</head>
+<body>
+<img class="left" src="/static/frigoMB.png" border="0" height="376px" width="328px"/>
+<form action = "http://localhost:5000/result" method = "POST">
+<div align="center" class="recherche">
+<h2>Ici, rentrez manuellement vos ingrédients</h2>
+<p>ingrédient 1<input type = "text" name = "ingredient" /></p>
+<p>ingrédient 2<input type = "text" name = "ingredient" /></p>
+<p>ingrédient 3<input type = "text" name = "ingredient" /></p>
+<p>ingrédient 4<input type ="text" name = "ingredient" /></p>
+<p>ingrédient 5<input type ="text" name = "ingredient" /></p>
+<p>ingrédient 6<input type ="text" name = "ingredient" /></p>
+<p>ingrédient 7<input type ="text" name = "ingredient" /></p>
+<p>ingrédient 8<input type ="text" name = "ingredient" /></p>
+<p>ingrédient 9<input type ="text" name = "ingredient" /></p>
+<p>ingrédient 10<input type ="text" name = "ingredient" /></p>
+<p><input type = "submit" value = "submit" /></p>
+</div>
+</form>
+<div align="right" class="nouveau">
+<h2>Ici, téléchargez une photo de votre frigo</h2>
+<form method="post" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+<input type=file name=photo />
+<input type="submit" />
+</form>
+</div>
+</body>
+</html>
